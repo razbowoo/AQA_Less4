@@ -1,6 +1,6 @@
 class Cat extends Animal {
 
-    Cat(double animalDistanceRun, double animalDistanceJump, double animalDistanceSwim) {
-        super(animalDistanceRun, animalDistanceJump, animalDistanceSwim);
+    Cat(double animalDistanceRun, double animalDistanceSwim) {
+        super(animalDistanceRun,  animalDistanceSwim);
     }
 }

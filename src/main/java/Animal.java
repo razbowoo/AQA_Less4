@@ -1,9 +1,8 @@
 public class Animal implements AnimalInterface {
-    private double animalDistanceRun, animalDistanceJump, animalDistanceSwim;
+    private double animalDistanceRun,  animalDistanceSwim;
 
-    Animal(double animalDistanceRun, double animalDistanceJump, double animalDistanceSwim) {
+    Animal(double animalDistanceRun,  double animalDistanceSwim) {
         this.animalDistanceRun = animalDistanceRun;
-        this.animalDistanceJump = animalDistanceJump;
         this.animalDistanceSwim = animalDistanceSwim;
     }
 
@@ -12,10 +11,7 @@ public class Animal implements AnimalInterface {
         return animalDistanceRun > value;
     }
 
-    @Override
-    public boolean jump(double value) {
-        return animalDistanceJump > value;
-    }
+
 
     @Override
     public boolean swim(double value) {
@@ -26,9 +22,7 @@ public class Animal implements AnimalInterface {
         return animalDistanceRun;
     }
 
-    double getAnimalDistanceJump() {
-        return animalDistanceJump;
-    }
+
 
     double getAnimalDistanceSwim() {
         return animalDistanceSwim;
